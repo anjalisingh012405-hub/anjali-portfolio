@@ -1,0 +1,1143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Anjali Singh — MIS Executive & Data Reporting Specialist</title>
+<meta name="description" content="Anjali Singh — MIS Executive, Excel & Google Sheets Specialist, Power BI Dashboard Developer. Freelance & part-time remote reporting services.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#FBFBF9;
+    --bg-alt:#F2F4F8;
+    --panel:#FFFFFF;
+    --ink:#10182B;
+    --ink-soft:#4C5668;
+    --ink-faint:#8993A4;
+    --line:#E3E7EE;
+    --line-strong:#CBD3DF;
+    --primary:#173E82;
+    --primary-dark:#0D2A5C;
+    --primary-tint:#EAF0FB;
+    --accent:#0E9AAE;
+    --accent-tint:#E4F6F8;
+    --amber:#D98E2B;
+    --amber-tint:#FBF0DF;
+    --green:#1D8A5E;
+    --radius-sm:8px;
+    --radius:14px;
+    --radius-lg:22px;
+    --shadow-sm:0 1px 2px rgba(16,24,43,0.06);
+    --shadow:0 8px 24px -8px rgba(16,24,43,0.16);
+    --shadow-lg:0 20px 48px -16px rgba(16,24,43,0.22);
+    --font-display:'Space Grotesk', 'Inter', sans-serif;
+    --font-body:'Inter', sans-serif;
+    --font-mono:'JetBrains Mono', monospace;
+  }
+
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    font-family:var(--font-body);
+    color:var(--ink);
+    background:var(--bg);
+    -webkit-font-smoothing:antialiased;
+    overflow-x:hidden;
+  }
+  img,svg{max-width:100%; display:block;}
+  a{color:inherit; text-decoration:none;}
+  ul{margin:0; padding:0; list-style:none;}
+  h1,h2,h3,h4{font-family:var(--font-display); margin:0; letter-spacing:-0.01em;}
+  p{margin:0;}
+  button{font-family:inherit; cursor:pointer;}
+  .mono{font-family:var(--font-mono);}
+
+  .wrap{
+    max-width:1180px;
+    margin:0 auto;
+    padding:0 28px;
+  }
+  section{position:relative;}
+
+  /* ---------- reveal ---------- */
+  .reveal{opacity:0; transform:translateY(18px); transition:opacity .7s ease, transform .7s ease;}
+  .reveal.in{opacity:1; transform:translateY(0);}
+  @media (prefers-reduced-motion: reduce){
+    .reveal{opacity:1; transform:none; transition:none;}
+    html{scroll-behavior:auto;}
+  }
+
+  /* ---------- grid texture ---------- */
+  .grid-bg{
+    background-image:
+      linear-gradient(var(--line) 1px, transparent 1px),
+      linear-gradient(90deg, var(--line) 1px, transparent 1px);
+    background-size:44px 44px;
+  }
+
+  /* ---------- nav ---------- */
+  header.site-nav{
+    position:sticky; top:0; z-index:100;
+    background:rgba(251,251,249,0.86);
+    backdrop-filter:blur(10px);
+    border-bottom:1px solid var(--line);
+  }
+  .nav-inner{
+    max-width:1180px; margin:0 auto; padding:16px 28px;
+    display:flex; align-items:center; justify-content:space-between;
+  }
+  .brand{display:flex; align-items:center; gap:10px; font-family:var(--font-display); font-weight:700; font-size:17px;}
+  .brand .mark{
+    width:34px; height:34px; border-radius:9px;
+    background:var(--primary);
+    display:flex; align-items:center; justify-content:center;
+    color:#fff; font-family:var(--font-mono); font-weight:600; font-size:13px;
+  }
+  .nav-links{display:flex; align-items:center; gap:32px;}
+  .nav-links a{
+    font-size:14.5px; font-weight:500; color:var(--ink-soft);
+    position:relative; padding:4px 0;
+    transition:color .2s ease;
+  }
+  .nav-links a:hover{color:var(--primary);}
+  .nav-links a::after{
+    content:''; position:absolute; left:0; bottom:-2px; width:0; height:2px;
+    background:var(--accent); transition:width .25s ease;
+  }
+  .nav-links a:hover::after{width:100%;}
+  .nav-cta{
+    display:inline-flex; align-items:center; gap:8px;
+    background:var(--primary); color:#fff !important;
+    padding:10px 18px; border-radius:999px; font-size:14px; font-weight:600;
+    transition:background .2s ease, transform .2s ease;
+  }
+  .nav-cta:hover{background:var(--primary-dark); transform:translateY(-1px);}
+  .nav-toggle{display:none; flex-direction:column; gap:5px; background:none; border:none; padding:6px;}
+  .nav-toggle span{width:22px; height:2px; background:var(--ink); border-radius:2px;}
+  .mobile-menu{
+    display:none; flex-direction:column; gap:2px;
+    padding:8px 28px 20px;
+    border-bottom:1px solid var(--line);
+    background:var(--bg);
+  }
+  .mobile-menu a{padding:12px 4px; font-size:15px; font-weight:500; color:var(--ink-soft); border-bottom:1px solid var(--line);}
+  .mobile-menu.open{display:flex;}
+
+  @media (max-width:860px){
+    .nav-links{display:none;}
+    .nav-toggle{display:flex;}
+  }
+
+  /* ---------- eyebrow / badges ---------- */
+  .eyebrow{
+    display:inline-flex; align-items:center; gap:8px;
+    font-family:var(--font-mono); font-size:12px; letter-spacing:.06em; text-transform:uppercase;
+    color:var(--primary); background:var(--primary-tint);
+    padding:7px 13px; border-radius:999px; border:1px solid #DCE6F8;
+    font-weight:600;
+  }
+  .eyebrow .dot{width:6px; height:6px; border-radius:50%; background:var(--accent);}
+
+  /* ---------- HERO ---------- */
+  .hero{
+    padding:76px 0 90px;
+    position:relative;
+  }
+  .hero-inner{
+    display:grid; grid-template-columns:1.05fr 1fr; gap:56px; align-items:center;
+  }
+  .hero h1{
+    font-size:clamp(34px, 4.6vw, 54px);
+    line-height:1.08;
+    margin:20px 0 20px;
+    font-weight:700;
+  }
+  .hero h1 .hl{color:var(--primary);}
+  .hero p.sub{
+    font-size:17px; line-height:1.6; color:var(--ink-soft); max-width:480px; margin-bottom:30px;
+  }
+  .hero-ctas{display:flex; gap:14px; flex-wrap:wrap; margin-bottom:34px;}
+  .btn{
+    display:inline-flex; align-items:center; gap:8px;
+    padding:14px 24px; border-radius:10px; font-weight:600; font-size:14.5px;
+    border:1px solid transparent; transition:transform .2s ease, box-shadow .2s ease, background .2s ease;
+  }
+  .btn-primary{background:var(--primary); color:#fff;}
+  .btn-primary:hover{transform:translateY(-2px); box-shadow:var(--shadow);}
+  .btn-outline{background:#fff; color:var(--ink); border-color:var(--line-strong);}
+  .btn-outline:hover{border-color:var(--primary); color:var(--primary); transform:translateY(-2px);}
+  .hero-meta{display:flex; gap:26px; flex-wrap:wrap;}
+  .hero-meta .item{display:flex; align-items:center; gap:8px; font-size:13.5px; color:var(--ink-soft);}
+  .hero-meta .item svg{width:16px; height:16px; color:var(--accent); flex:none;}
+
+  /* hero dashboard visual */
+  .dash-card{
+    background:var(--panel);
+    border:1px solid var(--line);
+    border-radius:var(--radius-lg);
+    box-shadow:var(--shadow-lg);
+    padding:20px;
+    position:relative;
+  }
+  .dash-topbar{
+    display:flex; align-items:center; justify-content:space-between;
+    margin-bottom:16px; padding-bottom:14px; border-bottom:1px solid var(--line);
+  }
+  .dash-topbar .dots{display:flex; gap:6px;}
+  .dash-topbar .dots span{width:9px; height:9px; border-radius:50%; background:var(--line-strong);}
+  .dash-title{font-family:var(--font-mono); font-size:11.5px; color:var(--ink-faint); letter-spacing:.04em;}
+  .kpi-row{display:grid; grid-template-columns:repeat(3,1fr); gap:10px; margin-bottom:14px;}
+  .kpi{
+    background:var(--bg-alt); border:1px solid var(--line); border-radius:10px; padding:12px;
+  }
+  .kpi .label{font-size:10.5px; color:var(--ink-faint); font-family:var(--font-mono); text-transform:uppercase; letter-spacing:.05em; margin-bottom:6px;}
+  .kpi .value{font-family:var(--font-mono); font-weight:600; font-size:19px; color:var(--ink);}
+  .kpi .delta{font-size:11px; color:var(--green); font-weight:600; margin-top:3px;}
+  .chart-box{
+    background:var(--bg-alt); border:1px solid var(--line); border-radius:10px; padding:14px 14px 6px; margin-bottom:10px;
+  }
+  .chart-box .cap{font-size:11px; color:var(--ink-faint); font-family:var(--font-mono); margin-bottom:8px;}
+  .mini-legend{display:flex; gap:14px; margin-top:8px;}
+  .mini-legend .li{display:flex; align-items:center; gap:6px; font-size:11px; color:var(--ink-soft);}
+  .mini-legend .sw{width:9px; height:9px; border-radius:2px;}
+  .dash-footnote{font-family:var(--font-mono); font-size:10.5px; color:var(--ink-faint); text-align:right; margin-top:6px;}
+
+  /* ---------- section headers ---------- */
+  .section-head{max-width:640px; margin-bottom:44px;}
+  .section-head .eyebrow{margin-bottom:16px;}
+  .section-head h2{font-size:clamp(26px,3.2vw,36px); margin-bottom:14px;}
+  .section-head p{color:var(--ink-soft); font-size:16px; line-height:1.65;}
+
+  section.pad{padding:88px 0;}
+  .border-y{border-top:1px solid var(--line); border-bottom:1px solid var(--line);}
+
+  /* ---------- ABOUT ---------- */
+  .about-grid{display:grid; grid-template-columns:0.85fr 1.15fr; gap:60px; align-items:start;}
+  .about-card{
+    background:var(--panel); border:1px solid var(--line); border-radius:var(--radius); padding:26px;
+    box-shadow:var(--shadow-sm);
+  }
+  .about-card .row{display:flex; justify-content:space-between; padding:11px 0; border-bottom:1px dashed var(--line); font-size:13.5px;}
+  .about-card .row:last-child{border-bottom:none;}
+  .about-card .row .k{color:var(--ink-faint); font-family:var(--font-mono); font-size:12px; text-transform:uppercase; letter-spacing:.04em;}
+  .about-card .row .v{color:var(--ink); font-weight:600; text-align:right;}
+  .about-text p{color:var(--ink-soft); font-size:16px; line-height:1.75; margin-bottom:16px;}
+  .about-text p:last-child{margin-bottom:0;}
+  .about-text strong{color:var(--ink);}
+
+  /* ---------- SERVICES ---------- */
+  .services-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:18px;}
+  .service-card{
+    background:var(--panel); border:1px solid var(--line); border-radius:var(--radius); padding:24px;
+    transition:transform .25s ease, box-shadow .25s ease, border-color .25s ease;
+  }
+  .service-card:hover{transform:translateY(-4px); box-shadow:var(--shadow); border-color:var(--line-strong);}
+  .service-card .tag{font-family:var(--font-mono); font-size:11px; color:var(--accent); font-weight:600; margin-bottom:14px; letter-spacing:.03em;}
+  .service-card h3{font-size:17px; margin-bottom:9px; font-weight:600;}
+  .service-card p{font-size:14px; color:var(--ink-soft); line-height:1.6;}
+
+  /* ---------- SKILLS ---------- */
+  .skills-cols{display:grid; grid-template-columns:repeat(3,1fr); gap:24px;}
+  .skill-col{background:var(--panel); border:1px solid var(--line); border-radius:var(--radius); padding:22px;}
+  .skill-col h4{font-family:var(--font-mono); font-size:12.5px; text-transform:uppercase; letter-spacing:.05em; color:var(--primary); margin-bottom:16px;}
+  .skill-pills{display:flex; flex-wrap:wrap; gap:8px;}
+  .pill{
+    font-size:13px; font-weight:500; padding:7px 12px; border-radius:8px;
+    background:var(--bg-alt); border:1px solid var(--line); color:var(--ink-soft);
+  }
+
+  /* ---------- PROJECTS ---------- */
+  .project{
+    display:grid; grid-template-columns:1fr 1fr; gap:56px; align-items:center;
+    padding:56px 0;
+  }
+  .project:not(:last-child){border-bottom:1px solid var(--line);}
+  .project.rev .p-visual{order:2;}
+  .project.rev .p-text{order:1;}
+  .badge-sample{
+    display:inline-flex; align-items:center; gap:7px;
+    font-family:var(--font-mono); font-size:11px; font-weight:600; letter-spacing:.04em; text-transform:uppercase;
+    color:var(--amber); background:var(--amber-tint); border:1px solid #F0DBAF;
+    padding:6px 11px; border-radius:999px; margin-bottom:16px;
+  }
+  .p-text h3{font-size:24px; margin-bottom:14px; font-weight:700;}
+  .p-block{margin-bottom:16px;}
+  .p-block .lbl{font-family:var(--font-mono); font-size:11px; text-transform:uppercase; letter-spacing:.05em; color:var(--ink-faint); margin-bottom:5px;}
+  .p-block .txt{font-size:14.5px; line-height:1.65; color:var(--ink-soft);}
+  .feat-list{display:grid; grid-template-columns:1fr 1fr; gap:8px 14px; margin-top:4px;}
+  .feat-list li{font-size:13.5px; color:var(--ink-soft); display:flex; gap:8px; align-items:flex-start; line-height:1.5;}
+  .feat-list li svg{width:14px; height:14px; color:var(--accent); flex:none; margin-top:3px;}
+  .tool-tags{display:flex; flex-wrap:wrap; gap:8px; margin-top:6px;}
+  .tool-tag{font-size:12px; font-family:var(--font-mono); background:var(--primary-tint); color:var(--primary); padding:5px 10px; border-radius:6px; font-weight:600;}
+  .p-cta{margin-top:20px; display:flex; gap:12px; align-items:center; flex-wrap:wrap;}
+  .view-project{
+    display:inline-flex; align-items:center; gap:8px; font-weight:600; font-size:14px; color:var(--primary);
+    padding:11px 18px; border:1.5px solid var(--primary); border-radius:9px; transition:all .2s ease;
+  }
+  .view-project:hover{background:var(--primary); color:#fff;}
+  .result-chip{font-size:13px; color:var(--green); font-weight:600; background:#E9F7EF; padding:8px 13px; border-radius:8px; border:1px solid #CBEBD9;}
+
+  /* project visuals */
+  .p-visual{
+    background:var(--panel); border:1px solid var(--line); border-radius:var(--radius-lg);
+    padding:20px; box-shadow:var(--shadow);
+  }
+  .pv-head{display:flex; justify-content:space-between; align-items:center; margin-bottom:14px;}
+  .pv-head .pv-title{font-family:var(--font-mono); font-size:11px; color:var(--ink-faint); letter-spacing:.04em;}
+  .pv-head .pv-badge{font-family:var(--font-mono); font-size:10px; padding:4px 9px; border-radius:6px; font-weight:600;}
+  .pv-badge.excel{background:#E6F4EA; color:#1E7A3D;}
+  .pv-badge.pbi{background:#FBF0D2; color:#8A6A0D;}
+  .pv-badge.sheets{background:#E5F3E9; color:#0F9D58;}
+
+  /* ---------- PROCESS ---------- */
+  .process-grid{display:grid; grid-template-columns:repeat(5,1fr); gap:0; position:relative;}
+  .process-step{
+    padding:0 16px; position:relative; text-align:left;
+  }
+  .process-step .num{
+    font-family:var(--font-mono); font-size:13px; color:var(--accent); font-weight:700; margin-bottom:14px;
+    display:flex; align-items:center; gap:10px;
+  }
+  .process-step .num .ln{height:1px; background:var(--line-strong); flex:1;}
+  .process-step h4{font-size:15.5px; margin-bottom:8px; font-weight:600;}
+  .process-step p{font-size:13px; color:var(--ink-soft); line-height:1.55;}
+
+  /* ---------- WHY ---------- */
+  .why-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:18px;}
+  .why-card{
+    background:var(--panel); border:1px solid var(--line); border-radius:var(--radius); padding:24px;
+  }
+  .why-card .ic{
+    width:40px; height:40px; border-radius:10px; background:var(--accent-tint);
+    display:flex; align-items:center; justify-content:center; margin-bottom:14px; color:var(--accent);
+  }
+  .why-card .ic svg{width:20px; height:20px;}
+  .why-card h4{font-size:15.5px; margin-bottom:7px; font-weight:600;}
+  .why-card p{font-size:13.5px; color:var(--ink-soft); line-height:1.6;}
+
+  /* ---------- CONTACT ---------- */
+  .contact-grid{display:grid; grid-template-columns:1fr 1.15fr; gap:56px;}
+  .contact-info p{color:var(--ink-soft); font-size:15.5px; line-height:1.7; margin-bottom:26px;}
+  .contact-links{display:flex; flex-direction:column; gap:10px; margin-bottom:28px;}
+  .clink{
+    display:flex; align-items:center; gap:12px; padding:13px 15px; border:1px solid var(--line); border-radius:10px;
+    background:var(--panel); font-size:14.5px; font-weight:500; transition:border-color .2s ease, transform .2s ease;
+  }
+  .clink:hover{border-color:var(--primary); transform:translateX(3px);}
+  .clink .ic{
+    width:32px; height:32px; border-radius:8px; background:var(--bg-alt); display:flex; align-items:center; justify-content:center; flex:none;
+  }
+  .clink .ic svg{width:16px; height:16px; color:var(--primary);}
+  .status-chip{
+    display:inline-flex; align-items:center; gap:8px; font-size:13px; font-weight:600; color:var(--green);
+    background:#E9F7EF; border:1px solid #CBEBD9; padding:8px 14px; border-radius:999px;
+  }
+  .status-chip .pulse{width:8px; height:8px; border-radius:50%; background:var(--green); position:relative;}
+  .status-chip .pulse::after{
+    content:''; position:absolute; inset:-4px; border-radius:50%; border:2px solid var(--green); opacity:.5;
+    animation:pulse 2s ease-out infinite;
+  }
+  @keyframes pulse{0%{transform:scale(.6); opacity:.6;} 100%{transform:scale(1.8); opacity:0;}}
+
+  form.contact-form{
+    background:var(--panel); border:1px solid var(--line); border-radius:var(--radius-lg); padding:30px;
+    box-shadow:var(--shadow-sm);
+  }
+  .form-row{display:grid; grid-template-columns:1fr 1fr; gap:16px; margin-bottom:16px;}
+  .form-group{display:flex; flex-direction:column; gap:7px;}
+  .form-group.full{grid-column:1/-1;}
+  label{font-size:12.5px; font-weight:600; color:var(--ink-soft); font-family:var(--font-mono); text-transform:uppercase; letter-spacing:.03em;}
+  input, select, textarea{
+    font-family:var(--font-body); font-size:14.5px; padding:12px 13px; border-radius:9px;
+    border:1px solid var(--line-strong); background:var(--bg); color:var(--ink); outline:none;
+    transition:border-color .2s ease, box-shadow .2s ease;
+  }
+  input:focus, select:focus, textarea:focus{border-color:var(--primary); box-shadow:0 0 0 3px var(--primary-tint);}
+  textarea{resize:vertical; min-height:110px;}
+  .submit-btn{
+    width:100%; padding:15px; background:var(--primary); color:#fff; border:none; border-radius:10px;
+    font-weight:700; font-size:15px; display:flex; align-items:center; justify-content:center; gap:8px;
+    transition:background .2s ease, transform .2s ease;
+  }
+  .submit-btn:hover{background:var(--primary-dark); transform:translateY(-2px);}
+  .form-note{font-size:12px; color:var(--ink-faint); margin-top:12px; text-align:center;}
+  .form-success{
+    display:none; align-items:center; gap:10px; background:#E9F7EF; border:1px solid #CBEBD9; color:var(--green);
+    padding:12px 15px; border-radius:9px; font-size:13.5px; font-weight:600; margin-bottom:16px;
+  }
+  .form-success.show{display:flex;}
+
+  /* ---------- FOOTER ---------- */
+  footer{background:var(--primary-dark); color:#DCE6F8; padding:52px 0 26px;}
+  .footer-top{display:flex; justify-content:space-between; align-items:flex-start; gap:30px; flex-wrap:wrap; margin-bottom:36px;}
+  .footer-brand{display:flex; align-items:center; gap:10px; font-family:var(--font-display); font-weight:700; font-size:18px; color:#fff;}
+  .footer-brand .mark{
+    width:34px; height:34px; border-radius:9px; background:rgba(255,255,255,0.12);
+    display:flex; align-items:center; justify-content:center; font-family:var(--font-mono); font-size:13px; color:#fff;
+  }
+  .footer-tag{font-size:13.5px; color:#A9BEE0; margin-top:10px; max-width:280px; line-height:1.6;}
+  .footer-links{display:flex; gap:44px; flex-wrap:wrap;}
+  .footer-col h5{font-size:12px; font-family:var(--font-mono); text-transform:uppercase; letter-spacing:.05em; color:#7E97C4; margin-bottom:14px;}
+  .footer-col a, .footer-col span{display:block; font-size:13.5px; color:#C9D8F2; margin-bottom:10px;}
+  .footer-col a:hover{color:#fff;}
+  .footer-bottom{
+    border-top:1px solid rgba(255,255,255,0.12); padding-top:22px; display:flex; justify-content:space-between;
+    flex-wrap:wrap; gap:10px; font-size:12.5px; color:#7E97C4;
+  }
+
+  /* ---------- responsive ---------- */
+  @media (max-width:980px){
+    .hero-inner{grid-template-columns:1fr; gap:44px;}
+    .about-grid{grid-template-columns:1fr; gap:34px;}
+    .services-grid{grid-template-columns:repeat(2,1fr);}
+    .skills-cols{grid-template-columns:1fr;}
+    .project{grid-template-columns:1fr; gap:30px;}
+    .project.rev .p-visual, .project.rev .p-text{order:initial;}
+    .project .p-visual{order:-1;}
+    .process-grid{grid-template-columns:repeat(2,1fr); row-gap:34px;}
+    .contact-grid{grid-template-columns:1fr; gap:36px;}
+    .why-grid{grid-template-columns:1fr 1fr;}
+  }
+  @media (max-width:600px){
+    .services-grid{grid-template-columns:1fr;}
+    .why-grid{grid-template-columns:1fr;}
+    .process-grid{grid-template-columns:1fr;}
+    .form-row{grid-template-columns:1fr;}
+    .kpi-row{grid-template-columns:1fr 1fr 1fr;}
+    section.pad{padding:60px 0;}
+    .hero{padding:48px 0 60px;}
+  }
+</style>
+</head>
+<body>
+
+<header class="site-nav">
+  <div class="nav-inner">
+    <a href="#home" class="brand"><span class="mark">AS</span> Anjali Singh</a>
+    <nav class="nav-links">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact" class="nav-cta">Hire Me</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero grid-bg" id="home">
+  <div class="wrap hero-inner">
+    <div>
+      <span class="eyebrow"><span class="dot"></span>Available for Freelance &amp; Part-Time Remote Work</span>
+      <h1 class="reveal in">Turning Raw Data into <span class="hl">Clear, Actionable</span> Business Reports.</h1>
+      <p class="sub">I build Excel, Google Sheets and Power BI dashboards that make business reporting faster, clearer and easier to manage — for small businesses that need clean data without hiring a full-time analyst.</p>
+      <div class="hero-ctas">
+        <a href="#projects" class="btn btn-primary">View My Projects</a>
+        <a href="#contact" class="btn btn-outline">Hire Me</a>
+      </div>
+      <div class="hero-meta">
+        <span class="item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-5.2-9.5-9.7C.6 7.4 2.6 4 6.2 4 8.4 4 10.4 5.2 12 7.2 13.6 5.2 15.6 4 17.8 4c3.6 0 5.6 3.4 3.7 7.3C19 15.8 12 21 12 21z"/></svg> Based in India</span>
+        <span class="item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg> Remote / Part-time / Freelance</span>
+        <span class="item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5-10-5zm4 2v5c0 1.1 2.7 2 6 2s6-.9 6-2v-5"/></svg> Pursuing MCA</span>
+      </div>
+    </div>
+
+    <div class="dash-card reveal in">
+      <div class="dash-topbar">
+        <div class="dots"><span></span><span></span><span></span></div>
+        <span class="dash-title">SAMPLE_DASHBOARD_PREVIEW.XLSX</span>
+      </div>
+      <div class="kpi-row">
+        <div class="kpi">
+          <div class="label">Total Sales</div>
+          <div class="value" id="kpiSales">₹0</div>
+          <div class="delta">▲ 12.4%</div>
+        </div>
+        <div class="kpi">
+          <div class="label">Orders</div>
+          <div class="value" id="kpiOrders">0</div>
+          <div class="delta">▲ 8.1%</div>
+        </div>
+        <div class="kpi">
+          <div class="label">Avg Value</div>
+          <div class="value" id="kpiAvg">₹0</div>
+          <div class="delta">▲ 3.9%</div>
+        </div>
+      </div>
+      <div class="chart-box">
+        <div class="cap">MONTHLY SALES TREND</div>
+        <svg viewBox="0 0 320 90" width="100%" height="90">
+          <polyline points="0,70 40,55 80,60 120,40 160,45 200,25 240,32 280,15 320,20" fill="none" stroke="#0E9AAE" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <polygon points="0,70 40,55 80,60 120,40 160,45 200,25 240,32 280,15 320,20 320,90 0,90" fill="#0E9AAE" opacity="0.08"/>
+        </svg>
+      </div>
+      <div class="chart-box" style="margin-bottom:0;">
+        <div class="cap">REGION-WISE SALES</div>
+        <svg viewBox="0 0 320 60" width="100%" height="60">
+          <rect x="4" y="18" width="26" height="42" rx="3" fill="#173E82"/>
+          <rect x="46" y="8" width="26" height="52" rx="3" fill="#173E82"/>
+          <rect x="88" y="26" width="26" height="34" rx="3" fill="#173E82" opacity="0.75"/>
+          <rect x="130" y="2" width="26" height="58" rx="3" fill="#173E82"/>
+          <rect x="172" y="34" width="26" height="26" rx="3" fill="#173E82" opacity="0.6"/>
+          <rect x="214" y="14" width="26" height="46" rx="3" fill="#0E9AAE"/>
+          <rect x="256" y="30" width="26" height="30" rx="3" fill="#173E82" opacity="0.7"/>
+          <rect x="298" y="20" width="18" height="40" rx="3" fill="#173E82" opacity="0.5"/>
+        </svg>
+      </div>
+      <div class="dash-footnote">Illustrative sample data · for demonstration only</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section class="pad border-y" id="about">
+  <div class="wrap about-grid">
+    <div class="about-card reveal">
+      <div class="row"><span class="k">Name</span><span class="v">Anjali Singh</span></div>
+      <div class="row"><span class="k">Role</span><span class="v">MIS Executive</span></div>
+      <div class="row"><span class="k">Focus</span><span class="v">Excel · Sheets · Power BI</span></div>
+      <div class="row"><span class="k">Education</span><span class="v">Pursuing MCA</span></div>
+      <div class="row"><span class="k">Location</span><span class="v">India</span></div>
+      <div class="row"><span class="k">Availability</span><span class="v">Remote / Part-time</span></div>
+    </div>
+    <div class="about-text reveal">
+      <span class="eyebrow" style="margin-bottom:18px;">About Me</span>
+      <h2 style="font-size:clamp(24px,3vw,32px); margin:16px 0 20px;">A data-focused graduate who turns spreadsheets into decisions.</h2>
+      <p>I'm a computer applications graduate currently pursuing my <strong>MCA</strong>, with hands-on experience in <strong>MIS reporting, Excel, dashboards, data analysis and reporting</strong>. I enjoy the moment a messy spreadsheet turns into a clean, readable report — that's the work I do best.</p>
+      <p>My goal is simple: help small businesses and companies convert raw, scattered data into <strong>useful reports, automated spreadsheets and easy-to-understand dashboards</strong>, so decisions can be made faster and with more confidence.</p>
+      <p>I'm currently building my freelance practice while continuing my studies, which means I bring genuine attention, structured thinking and up-to-date tools — without the overhead of a full-time hire.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SERVICES ============ -->
+<section class="pad" id="services">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">What I Do</span>
+      <h2>Services built around one goal: reliable reporting.</h2>
+      <p>From a single cleaned-up spreadsheet to a fully automated dashboard, here's how I can support your reporting workflow.</p>
+    </div>
+    <div class="services-grid" id="servicesGrid"></div>
+  </div>
+</section>
+
+<!-- ============ SKILLS ============ -->
+<section class="pad border-y bg-alt-section" id="skills" style="background:var(--bg-alt);">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Toolkit</span>
+      <h2>Skills &amp; Tools</h2>
+      <p>The core spreadsheet, BI and reporting tools I use day-to-day.</p>
+    </div>
+    <div class="skills-cols">
+      <div class="skill-col reveal">
+        <h4>Spreadsheets</h4>
+        <div class="skill-pills">
+          <span class="pill">Microsoft Excel</span>
+          <span class="pill">Pivot Tables</span>
+          <span class="pill">XLOOKUP / VLOOKUP</span>
+          <span class="pill">INDEX-MATCH</span>
+          <span class="pill">IF / SUMIFS / COUNTIFS</span>
+          <span class="pill">Conditional Formatting</span>
+          <span class="pill">Charts &amp; Dashboards</span>
+        </div>
+      </div>
+      <div class="skill-col reveal">
+        <h4>BI &amp; Automation</h4>
+        <div class="skill-pills">
+          <span class="pill">Power Query</span>
+          <span class="pill">Power BI</span>
+          <span class="pill">Google Sheets</span>
+          <span class="pill">Google Apps Script</span>
+          <span class="pill">Basic SQL</span>
+        </div>
+      </div>
+      <div class="skill-col reveal">
+        <h4>Reporting</h4>
+        <div class="skill-pills">
+          <span class="pill">MIS Reporting</span>
+          <span class="pill">Data Cleaning</span>
+          <span class="pill">Data Visualization</span>
+          <span class="pill">Business Reporting</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROJECTS ============ -->
+<section class="pad" id="projects">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Featured Work</span>
+      <h2>Sample Projects</h2>
+      <p>These are demo projects built to demonstrate my reporting and dashboard skills using sample data — labeled clearly since they aren't tied to a specific paid client engagement yet.</p>
+    </div>
+
+    <!-- PROJECT 1 -->
+    <div class="project reveal">
+      <div class="p-text">
+        <span class="badge-sample">● Sample Project</span>
+        <h3>Sales MIS Dashboard</h3>
+        <div class="p-block">
+          <div class="lbl">Business Problem</div>
+          <div class="txt">Sales teams often track orders across scattered spreadsheets with no single view of performance, making it hard to spot trends or top products quickly.</div>
+        </div>
+        <div class="p-block">
+          <div class="lbl">My Solution</div>
+          <div class="txt">Built a single Excel workbook that pulls raw order data into a live dashboard with KPIs, trend charts and slicer-based filters — no manual recalculating needed.</div>
+        </div>
+        <div class="p-block">
+          <div class="lbl">Key Features</div>
+          <ul class="feat-list">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Total Sales &amp; Order KPIs</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Monthly sales trend chart</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Region &amp; product-wise breakdown</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Interactive filters &amp; slicers</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Top-performing products list</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>One-click refresh on new data</li>
+          </ul>
+        </div>
+        <div class="tool-tags">
+          <span class="tool-tag">Excel</span><span class="tool-tag">Pivot Tables</span><span class="tool-tag">Charts</span><span class="tool-tag">Formulas</span>
+        </div>
+        <div class="p-cta">
+          <a href="#" class="view-project" onclick="return false;">View Project →</a>
+          <span class="result-chip">Result: Report time cut from hours to minutes</span>
+        </div>
+      </div>
+
+      <div class="p-visual">
+        <div class="pv-head"><span class="pv-title">SALES_MIS.XLSX — SAMPLE DATA</span><span class="pv-badge excel">Excel</span></div>
+        <div class="kpi-row">
+          <div class="kpi"><div class="label">Total Sales</div><div class="value">₹18.4L</div></div>
+          <div class="kpi"><div class="label">Orders</div><div class="value">1,240</div></div>
+          <div class="kpi"><div class="label">Top Region</div><div class="value">North</div></div>
+        </div>
+        <div class="chart-box">
+          <div class="cap">PRODUCT-WISE SALES</div>
+          <svg viewBox="0 0 300 90" width="100%" height="90">
+            <rect x="0" y="10" width="300" height="14" rx="3" fill="#173E82"/>
+            <rect x="0" y="34" width="230" height="14" rx="3" fill="#173E82" opacity="0.8"/>
+            <rect x="0" y="58" width="170" height="14" rx="3" fill="#0E9AAE"/>
+            <rect x="0" y="82" width="110" height="8" rx="3" fill="#173E82" opacity="0.45"/>
+          </svg>
+        </div>
+        <div class="dash-footnote">Sample data · illustrative only</div>
+      </div>
+    </div>
+
+    <!-- PROJECT 2 -->
+    <div class="project rev reveal">
+      <div class="p-text">
+        <span class="badge-sample">● Sample Project</span>
+        <h3>Service Tracker / Service Duration MIS</h3>
+        <div class="p-block">
+          <div class="lbl">Business Problem</div>
+          <div class="txt">Service-based teams need visibility into request volume, completion times and technician performance, but tracking usually lives in disconnected logs.</div>
+        </div>
+        <div class="p-block">
+          <div class="lbl">My Solution</div>
+          <div class="txt">Designed a service-tracking MIS that consolidates requests into pivot-based reports showing status, duration and performance at a glance.</div>
+        </div>
+        <div class="p-block">
+          <div class="lbl">Key Features</div>
+          <ul class="feat-list">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Total service requests KPI</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Completed vs pending view</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Average service duration</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Technician performance table</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Monthly service analysis</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Status-wise breakdown</li>
+          </ul>
+        </div>
+        <div class="tool-tags">
+          <span class="tool-tag">Excel</span><span class="tool-tag">Pivot Tables</span><span class="tool-tag">Power Query</span><span class="tool-tag">Dashboard</span>
+        </div>
+        <div class="p-cta">
+          <a href="#" class="view-project" onclick="return false;">View Project →</a>
+          <span class="result-chip">Result: Clear visibility into bottlenecks</span>
+        </div>
+      </div>
+
+      <div class="p-visual">
+        <div class="pv-head"><span class="pv-title">SERVICE_TRACKER.XLSX — SAMPLE DATA</span><span class="pv-badge excel">Excel</span></div>
+        <div class="kpi-row">
+          <div class="kpi"><div class="label">Requests</div><div class="value">386</div></div>
+          <div class="kpi"><div class="label">Completed</div><div class="value">312</div></div>
+          <div class="kpi"><div class="label">Avg Days</div><div class="value">2.3</div></div>
+        </div>
+        <div class="chart-box" style="display:flex; align-items:center; gap:18px;">
+          <svg viewBox="0 0 80 80" width="80" height="80">
+            <circle cx="40" cy="40" r="32" fill="none" stroke="#E3E7EE" stroke-width="12"/>
+            <circle cx="40" cy="40" r="32" fill="none" stroke="#173E82" stroke-width="12" stroke-dasharray="161 201" stroke-linecap="round" transform="rotate(-90 40 40)"/>
+          </svg>
+          <div>
+            <div class="mini-legend" style="flex-direction:column; gap:8px;">
+              <div class="li"><span class="sw" style="background:#173E82;"></span>Completed — 81%</div>
+              <div class="li"><span class="sw" style="background:#E3E7EE;"></span>Pending — 19%</div>
+            </div>
+          </div>
+        </div>
+        <div class="dash-footnote">Sample data · illustrative only</div>
+      </div>
+    </div>
+
+    <!-- PROJECT 3 -->
+    <div class="project reveal">
+      <div class="p-text">
+        <span class="badge-sample">● Sample Project</span>
+        <h3>Power BI Business Dashboard</h3>
+        <div class="p-block">
+          <div class="lbl">Business Problem</div>
+          <div class="txt">Leadership needed a single, interactive view of business performance instead of static monthly Excel exports that were slow to update.</div>
+        </div>
+        <div class="p-block">
+          <div class="lbl">My Solution</div>
+          <div class="txt">Cleaned and modeled the raw data, then built an interactive Power BI dashboard with drill-down filters for category and region.</div>
+        </div>
+        <div class="p-block">
+          <div class="lbl">Key Features</div>
+          <ul class="feat-list">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Revenue &amp; performance KPIs</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Monthly trend visuals</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Category-level analysis</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Regional analysis</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Interactive filters</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Business insight callouts</li>
+          </ul>
+        </div>
+        <div class="tool-tags">
+          <span class="tool-tag">Power BI</span><span class="tool-tag">Data Cleaning</span><span class="tool-tag">Data Visualization</span>
+        </div>
+        <div class="p-cta">
+          <a href="#" class="view-project" onclick="return false;">View Project →</a>
+          <span class="result-chip">Result: One live dashboard, always up to date</span>
+        </div>
+      </div>
+
+      <div class="p-visual">
+        <div class="pv-head"><span class="pv-title">BUSINESS_DASHBOARD.PBIX — SAMPLE DATA</span><span class="pv-badge pbi">Power BI</span></div>
+        <div class="kpi-row">
+          <div class="kpi"><div class="label">Revenue</div><div class="value">₹42.1L</div></div>
+          <div class="kpi"><div class="label">Growth</div><div class="value">+9.6%</div></div>
+          <div class="kpi"><div class="label">Categories</div><div class="value">6</div></div>
+        </div>
+        <div class="chart-box">
+          <div class="cap">MONTHLY TREND</div>
+          <svg viewBox="0 0 300 80" width="100%" height="80">
+            <polygon points="0,60 40,50 80,55 120,32 160,40 200,20 240,28 280,10 300,14 300,80 0,80" fill="#D98E2B" opacity="0.12"/>
+            <polyline points="0,60 40,50 80,55 120,32 160,40 200,20 240,28 280,10 300,14" fill="none" stroke="#D98E2B" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <div class="dash-footnote">Sample data · illustrative only</div>
+      </div>
+    </div>
+
+    <!-- PROJECT 4 -->
+    <div class="project rev reveal">
+      <div class="p-text">
+        <span class="badge-sample">● Sample Project</span>
+        <h3>Google Sheets Automation</h3>
+        <div class="p-block">
+          <div class="lbl">Business Problem</div>
+          <div class="txt">Manually re-entering and re-summarizing data every week wastes hours and introduces errors, especially for repetitive reporting tasks.</div>
+        </div>
+        <div class="p-block">
+          <div class="lbl">My Solution</div>
+          <div class="txt">Built a Google Sheets system with dynamic formulas, automatic summaries and Apps Script automation so reports update themselves as new data comes in — turning a manual weekly task into a near-instant one.</div>
+        </div>
+        <div class="p-block">
+          <div class="lbl">Key Features</div>
+          <ul class="feat-list">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Automated data entry &amp; reporting</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Dynamic formulas</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Automatic summaries</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Built-in dashboard tab</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Google Apps Script triggers</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Zero manual recalculation</li>
+          </ul>
+        </div>
+        <div class="tool-tags">
+          <span class="tool-tag">Google Sheets</span><span class="tool-tag">Apps Script</span><span class="tool-tag">Automation</span>
+        </div>
+        <div class="p-cta">
+          <a href="#" class="view-project" onclick="return false;">View Project →</a>
+          <span class="result-chip">Result: Weekly reporting cut to a few clicks</span>
+        </div>
+      </div>
+
+      <div class="p-visual">
+        <div class="pv-head"><span class="pv-title">AUTO_REPORT.GSHEET — SAMPLE DATA</span><span class="pv-badge sheets">Sheets</span></div>
+        <div style="display:flex; gap:10px; align-items:center; margin-bottom:12px;">
+          <div style="flex:1; background:var(--bg-alt); border:1px solid var(--line); border-radius:8px; padding:10px;">
+            <div class="cap" style="margin-bottom:6px;">RAW ENTRIES</div>
+            <div style="font-family:var(--font-mono); font-size:11px; color:var(--ink-faint); line-height:1.9;">
+              12-Aug · Delhi · ₹4,200<br>13-Aug · Pune · ₹3,150<br>13-Aug · Delhi · ₹2,780
+            </div>
+          </div>
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="var(--accent)" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          <div style="flex:1; background:var(--primary-tint); border:1px solid #DCE6F8; border-radius:8px; padding:10px;">
+            <div class="cap" style="margin-bottom:6px; color:var(--primary);">AUTO SUMMARY</div>
+            <div style="font-family:var(--font-mono); font-size:11px; color:var(--primary); line-height:1.9;">
+              Total: ₹10,130<br>Entries: 3<br>Updated: Live
+            </div>
+          </div>
+        </div>
+        <div class="dash-footnote">Sample data · illustrative only</div>
+      </div>
+    </div>
+
+    <!-- PROJECT 5 -->
+    <div class="project rev reveal">
+      <div class="p-text">
+        <span class="badge-sample">● Sample Project</span>
+        <h3>P&amp;L (Profit &amp; Loss) Dashboard</h3>
+        <div class="p-block">
+          <div class="lbl">Business Problem</div>
+          <div class="txt">Small businesses often prepare P&amp;L figures only at month-end in a static format, making it hard to track revenue, expenses and margins as the month progresses.</div>
+        </div>
+        <div class="p-block">
+          <div class="lbl">My Solution</div>
+          <div class="txt">Built an Excel-based P&amp;L dashboard that pulls revenue and expense data into a live summary — showing gross profit, net profit and expense-wise breakdown, updated automatically as figures are entered.</div>
+        </div>
+        <div class="p-block">
+          <div class="lbl">Key Features</div>
+          <ul class="feat-list">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Revenue vs expense KPIs</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Gross &amp; net profit margin</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Month-on-month P&amp;L trend</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Expense category breakdown</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Budget vs actual comparison</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Auto-updating summary sheet</li>
+          </ul>
+        </div>
+        <div class="tool-tags">
+          <span class="tool-tag">Excel</span><span class="tool-tag">Pivot Tables</span><span class="tool-tag">Formulas</span><span class="tool-tag">Dashboard</span>
+        </div>
+        <div class="p-cta">
+          <a href="#" class="view-project" onclick="return false;">View Project →</a>
+          <span class="result-chip">Result: Real-time view of profitability, not just month-end</span>
+        </div>
+      </div>
+
+      <div class="p-visual">
+        <div class="pv-head"><span class="pv-title">PNL_DASHBOARD.XLSX — SAMPLE DATA</span><span class="pv-badge excel">Excel</span></div>
+        <div class="kpi-row">
+          <div class="kpi"><div class="label">Revenue</div><div class="value">₹9.6L</div></div>
+          <div class="kpi"><div class="label">Net Profit</div><div class="value">₹2.1L</div></div>
+          <div class="kpi"><div class="label">Margin</div><div class="value">21.9%</div></div>
+        </div>
+        <div class="chart-box">
+          <div class="cap">EXPENSE BREAKDOWN</div>
+          <svg viewBox="0 0 300 90" width="100%" height="90">
+            <rect x="0" y="12" width="300" height="14" rx="3" fill="#173E82"/>
+            <rect x="0" y="34" width="205" height="14" rx="3" fill="#0E9AAE"/>
+            <rect x="0" y="56" width="140" height="14" rx="3" fill="#173E82" opacity="0.6"/>
+            <rect x="0" y="78" width="90" height="10" rx="3" fill="#D98E2B" opacity="0.8"/>
+          </svg>
+        </div>
+        <div class="dash-footnote">Sample data · illustrative only</div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============ PROCESS ============ -->
+<section class="pad border-y" style="background:var(--bg-alt);">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">How It Works</span>
+      <h2>Work Process</h2>
+      <p>A straightforward five-step process so you always know what's happening with your report or dashboard.</p>
+    </div>
+    <div class="process-grid" id="processGrid"></div>
+  </div>
+</section>
+
+<!-- ============ WHY WORK WITH ME ============ -->
+<section class="pad" id="why">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Why Work With Me</span>
+      <h2>What you get, beyond the spreadsheet.</h2>
+    </div>
+    <div class="why-grid" id="whyGrid"></div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="pad border-y" id="contact" style="background:var(--bg-alt);">
+  <div class="wrap contact-grid">
+    <div class="contact-info reveal">
+      <span class="eyebrow" style="margin-bottom:18px;">Get In Touch</span>
+      <h2 style="font-size:clamp(24px,3vw,32px); margin:16px 0 14px;">Let's talk about your reporting.</h2>
+      <p>Tell me a bit about your project — even a rough idea is fine. I'll get back to you with how I can help and a realistic timeline.</p>
+      <div class="status-chip" style="margin-bottom:26px;"><span class="pulse"></span>Currently available for freelance &amp; part-time work</div>
+      <div class="contact-links">
+        <a class="clink" href="mailto:hello@example.com">
+          <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16v16H4z" opacity="0"/><path d="M3 6l9 7 9-7M3 6h18v12H3z"/></svg></span>
+          hello@example.com <span style="margin-left:auto; color:var(--ink-faint); font-size:12px;">(placeholder)</span>
+        </a>
+        <a class="clink" href="#" onclick="return false;">
+          <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M7 10v7M7 7v.01M11 17v-4.5a2 2 0 0 1 4 0V17M11 12.5V17"/></svg></span>
+          LinkedIn <span style="margin-left:auto; color:var(--ink-faint); font-size:12px;">(placeholder)</span>
+        </a>
+        <a class="clink" href="#" onclick="return false;">
+          <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M8 12h8M12 8v8"/></svg></span>
+          Upwork <span style="margin-left:auto; color:var(--ink-faint); font-size:12px;">(placeholder)</span>
+        </a>
+        <a class="clink" href="#" onclick="return false;">
+          <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3 6 6 .9-4.5 4.3 1 6.3-5.5-3-5.5 3 1-6.3L3 8.9 9 8l3-6z"/></svg></span>
+          Fiverr <span style="margin-left:auto; color:var(--ink-faint); font-size:12px;">(placeholder)</span>
+        </a>
+      </div>
+    </div>
+
+    <form class="contact-form reveal" id="contactForm">
+      <div class="form-success" id="formSuccess">✓ Thanks! Your message is ready — check your email app to send it.</div>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="fname">Name</label>
+          <input type="text" id="fname" name="name" placeholder="Your full name" required>
+        </div>
+        <div class="form-group">
+          <label for="femail">Email</label>
+          <input type="email" id="femail" name="email" placeholder="you@company.com" required>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="ftype">Project Type</label>
+          <select id="ftype" name="type">
+            <option>Excel MIS Report</option>
+            <option>Excel Dashboard</option>
+            <option>Google Sheets Dashboard</option>
+            <option>Power BI Dashboard</option>
+            <option>Data Cleaning & Formatting</option>
+            <option>Automation / Other</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="fbudget">Budget</label>
+          <select id="fbudget" name="budget">
+            <option>Under ₹5,000</option>
+            <option>₹5,000 – ₹15,000</option>
+            <option>₹15,000 – ₹30,000</option>
+            <option>Let's discuss</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-group full" style="margin-bottom:20px;">
+        <label for="fmessage">Message</label>
+        <textarea id="fmessage" name="message" placeholder="Tell me about your data, current process and what you'd like as the end result..." required></textarea>
+      </div>
+      <button type="submit" class="submit-btn">Send Message <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+      <div class="form-note">This opens your email app with the message pre-filled — replace the placeholder address once your real email is set.</div>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-top">
+      <div>
+        <div class="footer-brand"><span class="mark">AS</span>Anjali Singh</div>
+        <p class="footer-tag">MIS Executive &amp; Data Reporting Specialist, helping businesses turn raw data into clear reports and dashboards.</p>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <h5>Navigate</h5>
+          <a href="#about">About</a>
+          <a href="#services">Services</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div class="footer-col">
+          <h5>Connect</h5>
+          <span>Email (placeholder)</span>
+          <span>LinkedIn (placeholder)</span>
+          <span>Upwork (placeholder)</span>
+          <span>Fiverr (placeholder)</span>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year"></span> Anjali Singh. All rights reserved.</span>
+      <span>Built for freelance &amp; remote MIS / reporting work.</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // ---------- data-driven sections ----------
+  const services = [
+    ["SRV-01","Excel MIS Reports","Clean, structured MIS reports built directly from your raw data, ready for daily or weekly review."],
+    ["SRV-02","Advanced Excel Dashboards","Interactive Excel dashboards with KPIs, charts and slicers so your team sees the full picture at a glance."],
+    ["SRV-03","Google Sheets Dashboards","Cloud-based dashboards in Google Sheets, easy to share and update from anywhere."],
+    ["SRV-04","Data Cleaning & Formatting","Messy exports turned into consistent, analysis-ready datasets — duplicates, errors and formatting fixed."],
+    ["SRV-05","Automated MIS Reporting","Formula and script-based automation so recurring reports build themselves from fresh data."],
+    ["SRV-06","Power BI Dashboards","Interactive Power BI reports with drill-downs, filters and clear visual storytelling."],
+    ["SRV-07","Excel Formula & Report Automation","XLOOKUP, INDEX-MATCH and SUMIFS-driven workbooks that update instantly as data changes."],
+    ["SRV-08","Monthly / Weekly Business Reports","Recurring business reports delivered on schedule, formatted for quick decision-making."],
+    ["SRV-09","Data Analysis & Visualization","Turning raw numbers into charts and summaries that actually answer your business questions."],
+    ["SRV-10","Word Reports & Documentation","Well-formatted MS Word reports, SOPs, process documents and business write-ups — clean structure, headings and layout ready to share or print."],
+  ];
+  const servicesGrid = document.getElementById('servicesGrid');
+  services.forEach(([tag,title,desc])=>{
+    const el = document.createElement('div');
+    el.className = 'service-card reveal';
+    el.innerHTML = `<div class="tag">${tag}</div><h3>${title}</h3><p>${desc}</p>`;
+    servicesGrid.appendChild(el);
+  });
+
+  const steps = [
+    ["01","Understand Requirement","We start with a short conversation about your data, current process and what the final report should answer."],
+    ["02","Data Collection & Cleaning","Raw data is gathered and cleaned — removing errors, duplicates and inconsistent formatting."],
+    ["03","Build Report / Dashboard","I build the report or dashboard in Excel, Google Sheets or Power BI, structured around your KPIs."],
+    ["04","Review & Refine","You review the draft and I refine layout, formulas or visuals based on your feedback."],
+    ["05","Deliver & Support","Final file is delivered with a short walkthrough, plus light support if anything needs adjusting."],
+  ];
+  const processGrid = document.getElementById('processGrid');
+  steps.forEach(([num,title,desc])=>{
+    const el = document.createElement('div');
+    el.className = 'process-step reveal';
+    el.innerHTML = `<div class="num">${num}<span class="ln"></span></div><h4>${title}</h4><p>${desc}</p>`;
+    processGrid.appendChild(el);
+  });
+
+  const whyItems = [
+    ["accuracy","Accuracy First","Every formula and figure is checked before delivery — no guesswork in your reports."],
+    ["speed","Fast Turnaround","Clear scope and focused work means quicker delivery without cutting corners."],
+    ["clarity","Clear Communication","Regular updates and plain-language explanations, not just a finished file."],
+    ["lock","Confidentiality","Your data and business details are treated as private, always."],
+    ["learn","Continuous Learner","Currently pursuing MCA, so my tools and techniques stay current."],
+    ["value","Fair, Transparent Pricing","Rates suited to small businesses and short-term projects, agreed before work starts."],
+  ];
+  const icons = {
+    accuracy:'<path d="M20 6L9 17l-5-5"/>',
+    speed:'<circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/>',
+    clarity:'<path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>',
+    lock:'<rect x="4" y="11" width="16" height="9" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/>',
+    learn:'<path d="M22 10v6M2 10l10-5 10 5-10 5-10-5zm4 2v5c0 1.1 2.7 2 6 2s6-.9 6-2v-5"/>',
+    value:'<circle cx="12" cy="12" r="9"/><path d="M9 12h6M12 9v6"/>'
+  };
+  const whyGrid = document.getElementById('whyGrid');
+  whyItems.forEach(([key,title,desc])=>{
+    const el = document.createElement('div');
+    el.className = 'why-card reveal';
+    el.innerHTML = `<div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">${icons[key]}</svg></div><h4>${title}</h4><p>${desc}</p>`;
+    whyGrid.appendChild(el);
+  });
+
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  // ---------- mobile nav ----------
+  const navToggle = document.getElementById('navToggle');
+  const mobileMenu = document.getElementById('mobileMenu');
+  navToggle.addEventListener('click', ()=>{
+    mobileMenu.classList.toggle('open');
+  });
+  mobileMenu.querySelectorAll('a').forEach(a=>{
+    a.addEventListener('click', ()=> mobileMenu.classList.remove('open'));
+  });
+
+  // ---------- reveal on scroll ----------
+  const revealEls = document.querySelectorAll('.reveal');
+  const io = new IntersectionObserver((entries)=>{
+    entries.forEach(entry=>{
+      if(entry.isIntersecting){
+        entry.target.classList.add('in');
+        io.unobserve(entry.target);
+      }
+    });
+  }, {threshold:0.12});
+  revealEls.forEach(el=> io.observe(el));
+
+  // ---------- hero KPI count-up ----------
+  function countUp(el, target, prefix='', suffix='', duration=1400){
+    const start = performance.now();
+    function tick(now){
+      const p = Math.min((now-start)/duration, 1);
+      const eased = 1 - Math.pow(1-p, 3);
+      const val = Math.floor(target*eased);
+      el.textContent = prefix + val.toLocaleString('en-IN') + suffix;
+      if(p<1) requestAnimationFrame(tick);
+    }
+    requestAnimationFrame(tick);
+  }
+  const heroObserved = { done:false };
+  const heroCard = document.querySelector('.dash-card');
+  const heroIO = new IntersectionObserver((entries)=>{
+    entries.forEach(entry=>{
+      if(entry.isIntersecting && !heroObserved.done){
+        heroObserved.done = true;
+        countUp(document.getElementById('kpiSales'), 1840000, '₹');
+        countUp(document.getElementById('kpiOrders'), 1240);
+        countUp(document.getElementById('kpiAvg'), 1484, '₹');
+        heroIO.disconnect();
+      }
+    });
+  }, {threshold:0.3});
+  if(heroCard) heroIO.observe(heroCard);
+
+  // fix ₹ formatting for large numbers (shorten sales to lakhs-style display after count)
+  setTimeout(()=>{
+    const salesEl = document.getElementById('kpiSales');
+    if(salesEl) salesEl.textContent = '₹18.4L';
+  }, 1500);
+
+  // ---------- contact form -> mailto ----------
+  const form = document.getElementById('contactForm');
+  const successBox = document.getElementById('formSuccess');
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    const name = document.getElementById('fname').value;
+    const email = document.getElementById('femail').value;
+    const type = document.getElementById('ftype').value;
+    const budget = document.getElementById('fbudget').value;
+    const message = document.getElementById('fmessage').value;
+    const subject = encodeURIComponent(`Freelance Enquiry: ${type}`);
+    const body = encodeURIComponent(
+      `Name: ${name}\nEmail: ${email}\nProject Type: ${type}\nBudget: ${budget}\n\nMessage:\n${message}`
+    );
+    successBox.classList.add('show');
+    window.location.href = `mailto:hello@example.com?subject=${subject}&body=${body}`;
+  });
+
+  // ---------- active nav link on scroll ----------
+  const sections = ['home','about','services','skills','projects','contact'].map(id=>document.getElementById(id)).filter(Boolean);
+  const navAnchors = document.querySelectorAll('.nav-links a[href^="#"]');
+  const navIO = new IntersectionObserver((entries)=>{
+    entries.forEach(entry=>{
+      const id = entry.target.id;
+      const link = document.querySelector(`.nav-links a[href="#${id}"]`);
+      if(!link) return;
+      if(entry.isIntersecting){
+        navAnchors.forEach(a=>a.style.color='');
+        link.style.color = 'var(--primary)';
+      }
+    });
+  }, {threshold:0.4});
+  sections.forEach(s=> navIO.observe(s));
+</script>
+
+</body>
+</html>
