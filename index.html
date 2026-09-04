@@ -598,58 +598,59 @@
   <div class="wrap">
     <div class="section-head reveal">
       <span class="eyebrow">Featured Work</span>
-      <h2>Real Reporting Work, Recreated for Privacy</h2>
-      <p>These dashboards are based on the actual reporting I build day to day as an MIS Executive. Company data is confidential, so every number below is recreated sample data — the structure, logic and problem-solving are the real thing. One additional project (Power BI) is personal practice, clearly marked.</p>
+      <h2>Real MIS Systems, Recreated for Privacy</h2>
+      <p>These are Google Apps Script dashboards I built and actively maintain as an MIS Executive — full working systems with live data connections, filters and automated calculations. Company data is confidential, so every number and name below is recreated sample data, but the structure, logic and features are exactly what's live in production. One additional project (Power BI) is personal practice, clearly marked.</p>
     </div>
 
     <!-- PROJECT 1 -->
     <div class="project reveal">
       <div class="p-text">
         <span class="badge-real">● Real Work Experience · Sample Data</span>
-        <h3>Sales &amp; Order MIS Dashboard</h3>
+        <h3>Lead Tracking Dashboard</h3>
         <div class="p-block">
           <div class="lbl">Business Problem</div>
-          <div class="txt">Order data came in from multiple sources with no single view of daily sales, making it hard to spot trends or top-performing products quickly.</div>
+          <div class="txt">Leads came in from multiple sources (ads, IndiaMART, direct) with no unified view of conversion, revenue or which showroom/adviser was performing — follow-ups and reporting were scattered.</div>
         </div>
         <div class="p-block">
           <div class="lbl">My Solution</div>
-          <div class="txt">Built an Excel workbook that pulls raw order data into a live dashboard with KPIs, trend charts and filters — the same structure I maintain and update regularly at my job.</div>
+          <div class="txt">Built a Google Apps Script web dashboard reading live from the master lead sheet — KPI summary, month-wise and showroom-wise trends, source and status breakdowns, and a leaderboard, all filterable by month, status, city and category.</div>
         </div>
         <div class="p-block">
           <div class="lbl">Key Features</div>
           <ul class="feat-list">
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Total Sales &amp; Order KPIs</li>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Monthly sales trend chart</li>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Product-wise breakdown</li>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Interactive filters &amp; slicers</li>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Top-performing products list</li>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>One-click refresh on new data</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Total, converted &amp; lost leads + revenue KPIs</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Showroom-wise &amp; month-wise trend charts</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>City-wise &amp; lead-source pie charts</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Lead status distribution (won/lost)</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Multi-filter slicers (month, status, city, category)</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Top-performer leaderboard</li>
           </ul>
         </div>
         <div class="tool-tags">
-          <span class="tool-tag">Excel</span><span class="tool-tag">Pivot Tables</span><span class="tool-tag">Charts</span><span class="tool-tag">Formulas</span>
+          <span class="tool-tag">Google Apps Script</span><span class="tool-tag">Google Sheets</span><span class="tool-tag">HTML/CSS/JS</span><span class="tool-tag">Chart.js</span>
         </div>
         <div class="p-cta">
           <a href="#" class="view-project" onclick="return false;">View Project →</a>
-          <span class="result-chip">Result: Daily sales visibility without manual recalculation</span>
+          <span class="result-chip">Result: One live view instead of five scattered sheets</span>
         </div>
       </div>
 
       <div class="p-visual">
-        <div class="pv-head"><span class="pv-title">SALES_MIS.XLSX — SAMPLE DATA</span><span class="pv-badge excel">Excel</span></div>
+        <div class="pv-head"><span class="pv-title">LEAD_DASHBOARD — SAMPLE DATA</span><span class="pv-badge sheets">Apps Script</span></div>
         <div class="kpi-row">
-          <div class="kpi"><div class="label">Total Sales</div><div class="value">₹18.4L</div></div>
-          <div class="kpi"><div class="label">Orders</div><div class="value">1,240</div></div>
-          <div class="kpi"><div class="label">Top Region</div><div class="value">North</div></div>
+          <div class="kpi"><div class="label">Total Leads</div><div class="value">4,120</div></div>
+          <div class="kpi"><div class="label">Converted</div><div class="value">918</div></div>
+          <div class="kpi"><div class="label">Revenue</div><div class="value">₹61.2L</div></div>
         </div>
-        <div class="chart-box">
-          <div class="cap">PRODUCT-WISE SALES</div>
-          <svg viewBox="0 0 300 90" width="100%" height="90">
-            <rect x="0" y="10" width="300" height="14" rx="3" fill="#173E82"/>
-            <rect x="0" y="34" width="230" height="14" rx="3" fill="#173E82" opacity="0.8"/>
-            <rect x="0" y="58" width="170" height="14" rx="3" fill="#0E9AAE"/>
-            <rect x="0" y="82" width="110" height="8" rx="3" fill="#173E82" opacity="0.45"/>
+        <div class="chart-box" style="display:flex; align-items:center; gap:18px;">
+          <svg viewBox="0 0 80 80" width="80" height="80">
+            <circle cx="40" cy="40" r="32" fill="none" stroke="#E3E7EE" stroke-width="12"/>
+            <circle cx="40" cy="40" r="32" fill="none" stroke="#0E9AAE" stroke-width="12" stroke-dasharray="146 201" stroke-linecap="round" transform="rotate(-90 40 40)"/>
           </svg>
+          <div class="mini-legend" style="flex-direction:column; gap:8px;">
+            <div class="li"><span class="sw" style="background:#0E9AAE;"></span>Converted — 22%</div>
+            <div class="li"><span class="sw" style="background:#E3E7EE;"></span>Open/Lost — 78%</div>
+          </div>
         </div>
         <div class="dash-footnote">Sample data · recreated for privacy</div>
       </div>
@@ -659,49 +660,47 @@
     <div class="project rev reveal">
       <div class="p-text">
         <span class="badge-real">● Real Work Experience · Sample Data</span>
-        <h3>Inventory &amp; Stock Management Dashboard</h3>
+        <h3>P&amp;L / MIS Dashboard</h3>
         <div class="p-block">
           <div class="lbl">Business Problem</div>
-          <div class="txt">Stock levels across products needed regular tracking to avoid overstocking or running short — without a live view, this meant manually checking multiple sheets.</div>
+          <div class="txt">Profitability data was spread across separate sheets for sales, expenses, manufacturing cost, stock and payments — no single statement tied it all together for month-end review.</div>
         </div>
         <div class="p-block">
           <div class="lbl">My Solution</div>
-          <div class="txt">Built a stock dashboard that tracks incoming, outgoing and current stock levels by product, with low-stock alerts flagged automatically through formulas.</div>
+          <div class="txt">Built a comprehensive Apps Script dashboard that reads and reconciles multiple source sheets into one P&amp;L statement — monthly trend, annual summary, top gross-profit items, manufacturing cost by model, and stock and payment reconciliation, all in one place.</div>
         </div>
         <div class="p-block">
           <div class="lbl">Key Features</div>
           <ul class="feat-list">
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Current stock KPI by product</li>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Low-stock automatic flagging</li>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Stock in vs stock out tracking</li>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Category-wise stock breakdown</li>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Monthly stock movement summary</li>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Reorder-point highlighting</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Monthly sales vs expenses vs investment</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Net surplus % trend &amp; annual P&amp;L statement</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Top 20 items by gross profit</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Operating expense break-up</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Model-wise manufacturing cost</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Payment-vs-receipt &amp; stock reconciliation</li>
           </ul>
         </div>
         <div class="tool-tags">
-          <span class="tool-tag">Excel</span><span class="tool-tag">Formulas</span><span class="tool-tag">Conditional Formatting</span><span class="tool-tag">Dashboard</span>
+          <span class="tool-tag">Google Apps Script</span><span class="tool-tag">Google Sheets</span><span class="tool-tag">Data Reconciliation</span>
         </div>
         <div class="p-cta">
           <a href="#" class="view-project" onclick="return false;">View Project →</a>
-          <span class="result-chip">Result: Stock-outs and overstocking caught early</span>
+          <span class="result-chip">Result: One P&amp;L statement instead of five separate sheets</span>
         </div>
       </div>
 
       <div class="p-visual">
-        <div class="pv-head"><span class="pv-title">STOCK_DASHBOARD.XLSX — SAMPLE DATA</span><span class="pv-badge excel">Excel</span></div>
+        <div class="pv-head"><span class="pv-title">PNL_MIS_DASHBOARD — SAMPLE DATA</span><span class="pv-badge sheets">Apps Script</span></div>
         <div class="kpi-row">
-          <div class="kpi"><div class="label">Items in Stock</div><div class="value">2,140</div></div>
-          <div class="kpi"><div class="label">Low Stock</div><div class="value">6</div></div>
-          <div class="kpi"><div class="label">Categories</div><div class="value">9</div></div>
+          <div class="kpi"><div class="label">Sales</div><div class="value">₹38.4L</div></div>
+          <div class="kpi"><div class="label">Net Profit</div><div class="value">₹7.9L</div></div>
+          <div class="kpi"><div class="label">Surplus %</div><div class="value">20.6%</div></div>
         </div>
         <div class="chart-box">
-          <div class="cap">STOCK BY CATEGORY</div>
+          <div class="cap">MONTHLY SALES VS EXPENSES</div>
           <svg viewBox="0 0 300 90" width="100%" height="90">
-            <rect x="0" y="10" width="260" height="14" rx="3" fill="#173E82"/>
-            <rect x="0" y="34" width="190" height="14" rx="3" fill="#0E9AAE"/>
-            <rect x="0" y="58" width="140" height="14" rx="3" fill="#173E82" opacity="0.7"/>
-            <rect x="0" y="82" width="70" height="8" rx="3" fill="#D98E2B" opacity="0.85"/>
+            <polyline points="0,60 40,50 80,55 120,32 160,40 200,20 240,28 280,15" fill="none" stroke="#173E82" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <polyline points="0,75 40,70 80,68 120,60 160,62 200,55 240,58 280,50" fill="none" stroke="#D98E2B" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
           </svg>
         </div>
         <div class="dash-footnote">Sample data · recreated for privacy</div>
@@ -712,53 +711,50 @@
     <div class="project reveal">
       <div class="p-text">
         <span class="badge-real">● Real Work Experience · Sample Data</span>
-        <h3>Distributor &amp; Payment Tracker Dashboard</h3>
+        <h3>Payment Collection &amp; Pending Tracker</h3>
         <div class="p-block">
           <div class="lbl">Business Problem</div>
-          <div class="txt">Tracking distributor-wise orders alongside pending and received payments needed to happen in one place, instead of cross-checking separate order and payment records.</div>
+          <div class="txt">Tracking which bills were collected versus still pending, by showroom/group and by date range, meant manually cross-checking bill numbers across sheets — slow and error-prone.</div>
         </div>
         <div class="p-block">
           <div class="lbl">My Solution</div>
-          <div class="txt">Built a combined dashboard showing distributor-wise order volumes next to a payment tracker — outstanding, received and overdue payments flagged automatically by formula.</div>
+          <div class="txt">Built a payment tracking dashboard that reconciles bill-level payment and receipt data automatically, grouping pending amounts by showroom and date range, and calculating exact days-pending per bill.</div>
         </div>
         <div class="p-block">
           <div class="lbl">Key Features</div>
           <ul class="feat-list">
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Distributor-wise order summary</li>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Payment status — paid / pending / overdue</li>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Outstanding amount by distributor</li>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Automatic overdue flagging</li>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Monthly payment collection trend</li>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>One-view reconciliation summary</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Collected vs pending KPI summary</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Group-wise (showroom-wise) pending breakdown</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Custom date-range filtering (week/month/custom)</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Bill-level days-pending calculation</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Automatic bill-number reconciliation across sheets</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>All-time vs period-based pending views</li>
           </ul>
         </div>
         <div class="tool-tags">
-          <span class="tool-tag">Excel</span><span class="tool-tag">Formulas</span><span class="tool-tag">Conditional Formatting</span><span class="tool-tag">Dashboard</span>
+          <span class="tool-tag">Google Apps Script</span><span class="tool-tag">Google Sheets</span><span class="tool-tag">Data Reconciliation</span>
         </div>
         <div class="p-cta">
           <a href="#" class="view-project" onclick="return false;">View Project →</a>
-          <span class="result-chip">Result: Overdue payments caught without manual cross-checking</span>
+          <span class="result-chip">Result: Pending payments visible by showroom in seconds</span>
         </div>
       </div>
 
       <div class="p-visual">
-        <div class="pv-head"><span class="pv-title">DISTRIBUTOR_PAYMENTS.XLSX — SAMPLE DATA</span><span class="pv-badge excel">Excel</span></div>
+        <div class="pv-head"><span class="pv-title">PAYMENT_TRACKER — SAMPLE DATA</span><span class="pv-badge sheets">Apps Script</span></div>
         <div class="kpi-row">
-          <div class="kpi"><div class="label">Distributors</div><div class="value">24</div></div>
-          <div class="kpi"><div class="label">Outstanding</div><div class="value">₹3.2L</div></div>
-          <div class="kpi"><div class="label">Overdue</div><div class="value">4</div></div>
+          <div class="kpi"><div class="label">Collected</div><div class="value">₹22.1L</div></div>
+          <div class="kpi"><div class="label">Pending</div><div class="value">₹4.6L</div></div>
+          <div class="kpi"><div class="label">Bills Due</div><div class="value">31</div></div>
         </div>
-        <div class="chart-box" style="display:flex; align-items:center; gap:18px;">
-          <svg viewBox="0 0 80 80" width="80" height="80">
-            <circle cx="40" cy="40" r="32" fill="none" stroke="#E3E7EE" stroke-width="12"/>
-            <circle cx="40" cy="40" r="32" fill="none" stroke="#173E82" stroke-width="12" stroke-dasharray="145 201" stroke-linecap="round" transform="rotate(-90 40 40)"/>
+        <div class="chart-box">
+          <div class="cap">PENDING BY SHOWROOM</div>
+          <svg viewBox="0 0 300 90" width="100%" height="90">
+            <rect x="0" y="10" width="240" height="14" rx="3" fill="#173E82"/>
+            <rect x="0" y="34" width="180" height="14" rx="3" fill="#0E9AAE"/>
+            <rect x="0" y="58" width="110" height="14" rx="3" fill="#173E82" opacity="0.6"/>
+            <rect x="0" y="82" width="60" height="8" rx="3" fill="#D98E2B" opacity="0.85"/>
           </svg>
-          <div>
-            <div class="mini-legend" style="flex-direction:column; gap:8px;">
-              <div class="li"><span class="sw" style="background:#173E82;"></span>Paid — 72%</div>
-              <div class="li"><span class="sw" style="background:#E3E7EE;"></span>Pending/Overdue — 28%</div>
-            </div>
-          </div>
         </div>
         <div class="dash-footnote">Sample data · recreated for privacy</div>
       </div>
@@ -768,49 +764,49 @@
     <div class="project rev reveal">
       <div class="p-text">
         <span class="badge-real">● Real Work Experience · Sample Data</span>
-        <h3>P&amp;L (Profit &amp; Loss) Dashboard</h3>
+        <h3>Stock Alert Dashboard</h3>
         <div class="p-block">
           <div class="lbl">Business Problem</div>
-          <div class="txt">Revenue, expenses and margins needed a clear month-by-month view instead of being pieced together at month-end from separate records.</div>
+          <div class="txt">Out-of-stock and low-stock items were only discovered when someone happened to check manually, causing missed sales opportunities and delayed reordering.</div>
         </div>
         <div class="p-block">
           <div class="lbl">My Solution</div>
-          <div class="txt">Built an Excel-based P&amp;L dashboard that pulls revenue and expense data into a live summary — gross profit, net profit and expense-wise breakdown, updating automatically as figures are entered.</div>
+          <div class="txt">Built a visual stock alert dashboard with product photos, showing out-of-stock and low-stock items as scannable cards, filterable by category, with one-click Excel export of alert lists.</div>
         </div>
         <div class="p-block">
           <div class="lbl">Key Features</div>
           <ul class="feat-list">
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Revenue vs expense KPIs</li>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Gross &amp; net profit margin</li>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Month-on-month P&amp;L trend</li>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Expense category breakdown</li>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Budget vs actual comparison</li>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Auto-updating summary sheet</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Out-of-stock &amp; low-stock KPI counts</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Visual product cards with photos</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Category/type filtering</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Status badges (out of stock / low stock)</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>One-click Excel export with embedded photos</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>"All stock OK" clear-state confirmation</li>
           </ul>
         </div>
         <div class="tool-tags">
-          <span class="tool-tag">Excel</span><span class="tool-tag">Pivot Tables</span><span class="tool-tag">Formulas</span><span class="tool-tag">Dashboard</span>
+          <span class="tool-tag">Google Apps Script</span><span class="tool-tag">Google Sheets</span><span class="tool-tag">Excel Export</span>
         </div>
         <div class="p-cta">
           <a href="#" class="view-project" onclick="return false;">View Project →</a>
-          <span class="result-chip">Result: Real-time view of profitability, not just month-end</span>
+          <span class="result-chip">Result: Stock gaps caught before they become missed sales</span>
         </div>
       </div>
 
       <div class="p-visual">
-        <div class="pv-head"><span class="pv-title">PNL_DASHBOARD.XLSX — SAMPLE DATA</span><span class="pv-badge excel">Excel</span></div>
+        <div class="pv-head"><span class="pv-title">STOCK_ALERT — SAMPLE DATA</span><span class="pv-badge sheets">Apps Script</span></div>
         <div class="kpi-row">
-          <div class="kpi"><div class="label">Revenue</div><div class="value">₹9.6L</div></div>
-          <div class="kpi"><div class="label">Net Profit</div><div class="value">₹2.1L</div></div>
-          <div class="kpi"><div class="label">Margin</div><div class="value">21.9%</div></div>
+          <div class="kpi"><div class="label">Out of Stock</div><div class="value">7</div></div>
+          <div class="kpi"><div class="label">Low Stock</div><div class="value">14</div></div>
+          <div class="kpi"><div class="label">Categories</div><div class="value">8</div></div>
         </div>
         <div class="chart-box">
-          <div class="cap">EXPENSE BREAKDOWN</div>
+          <div class="cap">ALERT ITEMS BY CATEGORY</div>
           <svg viewBox="0 0 300 90" width="100%" height="90">
-            <rect x="0" y="12" width="300" height="14" rx="3" fill="#173E82"/>
-            <rect x="0" y="34" width="205" height="14" rx="3" fill="#0E9AAE"/>
-            <rect x="0" y="56" width="140" height="14" rx="3" fill="#173E82" opacity="0.6"/>
-            <rect x="0" y="78" width="90" height="10" rx="3" fill="#D98E2B" opacity="0.8"/>
+            <rect x="0" y="10" width="200" height="14" rx="3" fill="#B84C4C"/>
+            <rect x="0" y="34" width="140" height="14" rx="3" fill="#D98E2B"/>
+            <rect x="0" y="58" width="90" height="14" rx="3" fill="#D98E2B" opacity="0.7"/>
+            <rect x="0" y="82" width="50" height="8" rx="3" fill="#D98E2B" opacity="0.5"/>
           </svg>
         </div>
         <div class="dash-footnote">Sample data · recreated for privacy</div>
@@ -821,106 +817,100 @@
     <div class="project reveal">
       <div class="p-text">
         <span class="badge-real">● Real Work Experience · Sample Data</span>
-        <h3>Google Sheets Automation</h3>
+        <h3>Distributor Billing Analysis Dashboard</h3>
         <div class="p-block">
           <div class="lbl">Business Problem</div>
-          <div class="txt">Manually re-entering and re-summarizing data every week wastes hours and introduces errors, especially for repetitive reporting tasks.</div>
+          <div class="txt">Understanding which distributors, states and advisers were driving billing — and how this year compared to last — meant manually pulling numbers together every time leadership asked.</div>
         </div>
         <div class="p-block">
           <div class="lbl">My Solution</div>
-          <div class="txt">Built a Google Sheets system with dynamic formulas and automatic summaries so reports update themselves as new data comes in — turning a manual weekly task into a near-instant one.</div>
+          <div class="txt">Built an analysis dashboard covering monthly and quarterly billing trends, year-on-year comparison, state-wise and adviser-wise splits, and a ranked distributor table — all filterable by year.</div>
         </div>
         <div class="p-block">
           <div class="lbl">Key Features</div>
           <ul class="feat-list">
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Automated data entry &amp; reporting</li>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Dynamic formulas</li>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Automatic summaries</li>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Built-in dashboard tab</li>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Google Apps Script triggers</li>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Zero manual recalculation</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Monthly billing trend, year-wise</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Quarter-wise share &amp; year-on-year comparison</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Top states by billing</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Adviser-wise billing split</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Distributor table — orders, bills, avg. bill value</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>State-wise distributor &amp; city coverage</li>
           </ul>
         </div>
         <div class="tool-tags">
-          <span class="tool-tag">Google Sheets</span><span class="tool-tag">Apps Script</span><span class="tool-tag">Automation</span>
+          <span class="tool-tag">Google Apps Script</span><span class="tool-tag">Chart.js</span><span class="tool-tag">Google Sheets</span>
         </div>
         <div class="p-cta">
           <a href="#" class="view-project" onclick="return false;">View Project →</a>
-          <span class="result-chip">Result: Weekly reporting cut to a few clicks</span>
+          <span class="result-chip">Result: Leadership questions answered in one click, not one spreadsheet hunt</span>
         </div>
       </div>
 
       <div class="p-visual">
-        <div class="pv-head"><span class="pv-title">AUTO_REPORT.GSHEET — SAMPLE DATA</span><span class="pv-badge sheets">Sheets</span></div>
-        <div style="display:flex; gap:10px; align-items:center; margin-bottom:12px;">
-          <div style="flex:1; background:var(--bg-alt); border:1px solid var(--line); border-radius:8px; padding:10px;">
-            <div class="cap" style="margin-bottom:6px;">RAW ENTRIES</div>
-            <div style="font-family:var(--font-mono); font-size:11px; color:var(--ink-faint); line-height:1.9;">
-              12-Aug · Delhi · ₹4,200<br>13-Aug · Pune · ₹3,150<br>13-Aug · Delhi · ₹2,780
-            </div>
-          </div>
-          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="var(--accent)" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-          <div style="flex:1; background:var(--primary-tint); border:1px solid #DCE6F8; border-radius:8px; padding:10px;">
-            <div class="cap" style="margin-bottom:6px; color:var(--primary);">AUTO SUMMARY</div>
-            <div style="font-family:var(--font-mono); font-size:11px; color:var(--primary); line-height:1.9;">
-              Total: ₹10,130<br>Entries: 3<br>Updated: Live
-            </div>
-          </div>
+        <div class="pv-head"><span class="pv-title">DISTRIBUTOR_ANALYSIS — SAMPLE DATA</span><span class="pv-badge sheets">Apps Script</span></div>
+        <div class="kpi-row">
+          <div class="kpi"><div class="label">Distributors</div><div class="value">58</div></div>
+          <div class="kpi"><div class="label">Billing YTD</div><div class="value">₹1.2Cr</div></div>
+          <div class="kpi"><div class="label">States</div><div class="value">12</div></div>
+        </div>
+        <div class="chart-box">
+          <div class="cap">QUARTER-WISE SHARE</div>
+          <svg viewBox="0 0 300 90" width="100%" height="90">
+            <rect x="4" y="20" width="60" height="40" rx="3" fill="#173E82"/>
+            <rect x="76" y="8" width="60" height="52" rx="3" fill="#173E82"/>
+            <rect x="148" y="28" width="60" height="32" rx="3" fill="#0E9AAE"/>
+            <rect x="220" y="14" width="60" height="46" rx="3" fill="#173E82" opacity="0.75"/>
+          </svg>
         </div>
         <div class="dash-footnote">Sample data · recreated for privacy</div>
       </div>
     </div>
 
     <!-- PROJECT 6 -->
-    <div class="project reveal">
+    <div class="project rev reveal">
       <div class="p-text">
         <span class="badge-real">● Real Work Experience · Sample Data</span>
-        <h3>Lead Tracking MIS Dashboard</h3>
+        <h3>MIS Hub — Multi-Dashboard Apps Script Platform</h3>
         <div class="p-block">
           <div class="lbl">Business Problem</div>
-          <div class="txt">Incoming leads from the online/sales side needed to be tracked from first contact through to conversion, without leads slipping through the cracks in scattered follow-up notes.</div>
+          <div class="txt">With several separate dashboards in daily use (leads, payments, stock, P&amp;L), everyone needed their own bookmark or link — there was no single place to reach all of them.</div>
         </div>
         <div class="p-block">
           <div class="lbl">My Solution</div>
-          <div class="txt">Built a lead tracking dashboard that logs every lead's source, stage and follow-up status in one sheet, with formulas that flag stalled leads and summarise conversion rate automatically.</div>
+          <div class="txt">Built a standalone "Hub" Apps Script web app with sidebar navigation that loads each dashboard inside it, so the whole MIS system is reachable from one link with one consistent interface.</div>
         </div>
         <div class="p-block">
           <div class="lbl">Key Features</div>
           <ul class="feat-list">
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Total leads &amp; conversion rate KPI</li>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Lead source-wise breakdown</li>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Stage-wise pipeline view (new / follow-up / converted / lost)</li>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Stalled-lead automatic flagging</li>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Monthly lead-to-conversion trend</li>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Follow-up reminder column</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Single sidebar linking to every dashboard</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Dashboards load inline via secure iframe embedding</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Active-dashboard indicator</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>One consistent access link for the whole team</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Mobile-responsive navigation</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Easy to extend with new dashboards</li>
           </ul>
         </div>
         <div class="tool-tags">
-          <span class="tool-tag">Excel</span><span class="tool-tag">Formulas</span><span class="tool-tag">Conditional Formatting</span><span class="tool-tag">Dashboard</span>
+          <span class="tool-tag">Google Apps Script</span><span class="tool-tag">Web App Architecture</span><span class="tool-tag">HTML/CSS/JS</span>
         </div>
         <div class="p-cta">
           <a href="#" class="view-project" onclick="return false;">View Project →</a>
-          <span class="result-chip">Result: No lead missed, conversion rate visible at a glance</span>
+          <span class="result-chip">Result: One link for the entire MIS system, not five</span>
         </div>
       </div>
 
       <div class="p-visual">
-        <div class="pv-head"><span class="pv-title">LEAD_TRACKER.XLSX — SAMPLE DATA</span><span class="pv-badge excel">Excel</span></div>
-        <div class="kpi-row">
-          <div class="kpi"><div class="label">Total Leads</div><div class="value">318</div></div>
-          <div class="kpi"><div class="label">Converted</div><div class="value">74</div></div>
-          <div class="kpi"><div class="label">Conv. Rate</div><div class="value">23.3%</div></div>
+        <div class="pv-head"><span class="pv-title">MIS_HUB — SAMPLE INTERFACE</span><span class="pv-badge sheets">Apps Script</span></div>
+        <div class="chart-box" style="margin-bottom:10px;">
+          <div class="cap">HUB NAVIGATION</div>
+          <div style="display:flex; flex-direction:column; gap:6px; margin-top:6px;">
+            <div style="background:var(--primary); color:#fff; padding:8px 12px; border-radius:6px; font-size:12px; font-weight:600;">📋 Lead Dashboard</div>
+            <div style="background:var(--bg-alt); border:1px solid var(--line); padding:8px 12px; border-radius:6px; font-size:12px; color:var(--ink-soft);">💰 Payment Tracker</div>
+            <div style="background:var(--bg-alt); border:1px solid var(--line); padding:8px 12px; border-radius:6px; font-size:12px; color:var(--ink-soft);">📦 Stock Alerts</div>
+            <div style="background:var(--bg-alt); border:1px solid var(--line); padding:8px 12px; border-radius:6px; font-size:12px; color:var(--ink-soft);">📊 P&amp;L / MIS</div>
+          </div>
         </div>
-        <div class="chart-box">
-          <div class="cap">LEADS BY SOURCE</div>
-          <svg viewBox="0 0 300 90" width="100%" height="90">
-            <rect x="0" y="10" width="270" height="14" rx="3" fill="#173E82"/>
-            <rect x="0" y="34" width="200" height="14" rx="3" fill="#0E9AAE"/>
-            <rect x="0" y="58" width="130" height="14" rx="3" fill="#173E82" opacity="0.65"/>
-            <rect x="0" y="82" width="80" height="8" rx="3" fill="#D98E2B" opacity="0.85"/>
-          </svg>
-        </div>
-        <div class="dash-footnote">Sample data · recreated for privacy</div>
+        <div class="dash-footnote">Sample interface · recreated for privacy</div>
       </div>
     </div>
 
